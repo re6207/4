@@ -1,0 +1,52 @@
+/* メニューバー全体 */
+ul.ddmenu {
+  margin: 0;
+  padding: 0 0 0 15px;
+  background-color: #cc0000;
+}
+
+/* メニュー項目を横並びにする */
+ul.ddmenu li {
+  width: 125px;
+  display: inline-block;
+  list-style-type: none;
+  position: relative;
+}
+
+/* メニュー項目の表示 */
+ul.ddmenu a {
+  background-color: #cc0000;
+  color: white;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+}
+
+/* サブメニューは初期状態では非表示 */
+ul.ddmenu ul {
+  display: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  z-index: 10;
+}
+
+/* サブメニューを縦に並べる */
+ul.ddmenu ul li {
+  display: block;
+}
+
+/* マウスオーバー時の色 */
+ul.ddmenu a:hover {
+  background-color: #ffdddd;
+  color: #dd0000;
+}
+
+/* 親項目にマウスを乗せるとサブメニューを表示 */
+ul.ddmenu li:hover > ul {
+  display: block;
+}
